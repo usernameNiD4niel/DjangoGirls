@@ -1,6 +1,7 @@
 # DjangoGirls
 Working With Django | Repository 2
 
+<head>
 <style>
 
     span {
@@ -8,6 +9,7 @@ Working With Django | Repository 2
     }
 
 </style>
+</head>
 
 <h2> My First Python Command </h2>
 <p><span> >>> 2 </span>+<span> 3 </span></p>
