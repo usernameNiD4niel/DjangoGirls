@@ -3,6 +3,12 @@ Working With Django | Repository 2
 
 <head>
 
+<style>
+    span {
+        color: orange;
+    }
+</style>
+
 Ref to: <a href="https://tutorial.djangogirls.org/en/python_introduction/" target="_blank">Django Girl - Intro to Python HonKit</a>
 
 </head>
@@ -60,12 +66,14 @@ Ref to: <a href="https://tutorial.djangogirls.org/en/python_introduction/" targe
 <p> >>> Daniel </p>
 
 
+<h2>Lists</h2>
+<p> <span> >>> </span>lottery = [<span>10</span>,<span>20</span>,<span>30</span>,<span>40</span>,<span>50</span>] </p>
+<p><span> >>> </span>len(lottery)</p>
+<p><span> >>> 6</span></p>
 
 
 
 
-
-
-
+<span> >>> </span>
 
 </body>
