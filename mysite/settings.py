@@ -26,7 +26,7 @@ SECRET_KEY = 'g9&8cr+0p3d(=4(-ij%ni)**i@u0u#x7aa0sbx_$gy3zodko%8'
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com']
 
 # Application definition
 
@@ -118,5 +118,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# I modify the STATIC_ROOT by getting the path and join the BASE_DIR and static as one string
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
-# https://tutorial.djangogirls.org/en/django_start_project/ - last code
