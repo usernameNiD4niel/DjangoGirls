@@ -1,10 +1,11 @@
 from django.shortcuts import render
+from .models import Post
 
 # Create your views here.
 
 
 def post_list(request):
     context = {
-        'first_name': 'Daniel Rey!'
+        'posts': Post.objects.all()
     }
-    return render(request, 'blog/index.html', context)
+    return render(request, 'blog/posts.html', context)

@@ -1,0 +1,12 @@
+{% extends "blog/index.html" %}
+<div>
+    {% block content %}
+        {% for post in posts %}
+            <h3>{{post.title}}</h3>
+            <p>Published by: {{post.author}}</p>
+            <p>Published on: {{post.created_date|date:"Y-m-d"}}</p>
+            <p>{{post.text}}</p>
+        {% endfor %}
+    {% endblock content %}
+
+</div>
