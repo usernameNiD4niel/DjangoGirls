@@ -9,3 +9,4 @@ def post_list(request):
         'posts': Post.objects.all()
     }
     return render(request, 'blog/posts.html', context)
+# https://tutorial.djangogirls.org/en/dynamic_data_in_templates/ | Last code i wrote
