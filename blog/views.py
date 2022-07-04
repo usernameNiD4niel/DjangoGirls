@@ -1,12 +1,11 @@
 from django.shortcuts import render
 from .models import Post
+from django.utils import timezone
 
 # Create your views here.
 
 
 def post_list(request):
-    context = {
-        'posts': Post.objects.all()
-    }
-    return render(request, 'blog/posts.html', context)
-# https://tutorial.djangogirls.org/en/dynamic_data_in_templates/ | Last code i wrote
+    posts = Post.objects.filter(
+        published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/posts.html', {'posts': posts})
