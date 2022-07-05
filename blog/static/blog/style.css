@@ -23,7 +23,10 @@ h2,
 h3,
 h4 {
     font-family: 'Orelega One', cursive;
-    font-size: 30px;
+}
+
+h2.orange {
+    color: #C25100;
 }
 
 .main-heading {
@@ -57,11 +60,9 @@ h4 {
     margin-bottom: 70px;
 }
 
-.post h2 a,
-.post h2 a:visited {
-    color: #000000;
+p {
+    text-align: justify;
 }
-
 .post > .date,
 .post > .actions {
     float: right;

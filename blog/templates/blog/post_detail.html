@@ -1,5 +1,13 @@
 {% extends 'blog/index.html' %}
 
 {% block content %}
-    <h1>Hello {{pk}}</h1>
+    <article class="post">
+        {% if pk.published_date %}
+            <time class="date">
+                {{ pk.published_date }}
+            </time>
+        {% endif %}
+        <h2 class="orange">{{ pk.title }}</h2>
+        <p>{{ pk.text|linebreaksbr }}</p>
+    </article>
 {% endblock content %}

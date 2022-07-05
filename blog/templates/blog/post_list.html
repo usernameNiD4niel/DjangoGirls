@@ -9,7 +9,6 @@
             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </article>
-        <!-- https://tutorial.djangogirls.org/en/extend_your_application/ | last code I wrote -->
         <hr>
     {% endfor %}
 {% endblock content %}

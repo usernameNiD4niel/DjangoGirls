@@ -123,6 +123,7 @@ STATIC_URL = '/static/'
 # I modify the STATIC_ROOT by getting the path and join the BASE_DIR and static as one string
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_ROOT = BASE_DIR + "/static"
+# STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
