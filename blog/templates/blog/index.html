@@ -17,7 +17,14 @@
 <body>
 
     <header class="page-header">
-        <h2><a class="text-light main-heading" href="{% url 'post_list' %}">DanielCompany</a></h2>
+        <div class="container">
+            {% if user.is_authenticated %}
+                <a href="{% url 'post_new' %}" class="top-menu">
+                    {% include './icons/file-earmark-plus.svg' %}
+                </a>
+            {% endif %}
+            <h2><a class="text-light main-heading" href="{% url 'post_list' %}">DanielCompany</a></h2>
+        </div>
     </header>
 
     <main class="container">
